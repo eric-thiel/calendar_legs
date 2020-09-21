@@ -45,7 +45,7 @@ server = shinyServer(
     cap = eventReactive(input$button, {
       
       number = runif(1,0,1)
-      ifelse(number > 0.3, "SHAVE YOUR LEGS","DON'T SHAVE YOUR LEGS")
+      ifelse(number > 0.7, "SHAVE YOUR LEGS","DON'T SHAVE YOUR LEGS")
     }) 
     
     output$mytable = renderText({   
